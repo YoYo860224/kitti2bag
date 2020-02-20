@@ -17,11 +17,10 @@ Update pip and numpy for docker.
     ├── calib_cam_to_cam.txt
     ├── calib_imu_to_velo.txt
     └── calib_velo_to_cam.txt
-
 ```
 
 * Docker Command
 ```
-docker run -v `pwd`:/data -it --rm xyox860224/kitti2bag -t <T> -r <r> raw_synced
-docker run -v `pwd`:/data -it --rm xyox860224/kitti2bag -t 2011_09_26 -r 0001 raw_synced
+docker run -v `pwd`:/data -it --rm yoyo860224/kitti2bag -t <T> -r <r> raw_synced
+docker run -v `pwd`:/data -it --rm yoyo860224/kitti2bag -t 2011_09_26 -r 0001 raw_synced
 ```
